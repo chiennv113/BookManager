@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawerLayout"
+    android:background="@color/trang"
+    tools:context=".Home_activity">
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar"
+
+        android:background="@color/colorPrimaryDark">
+      <ImageView
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:id="@+id/menu"
+          android:src="@drawable/menu2"/>
+
+    </android.support.v7.widget.Toolbar>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+android:layout_centerHorizontal="true"
+        android:text="Home"
+        android:textSize="30dp"
+        android:layout_marginLeft="100dp"
+        android:textColor="@color/trang"
+        android:layout_marginBottom="10dp"/>
+   <RelativeLayout
+      android:layout_width="wrap_content"
+      android:layout_marginTop="80dp"
+      android:layout_marginLeft="80dp"
+      android:id="@+id/r1"
+      android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/emthree"
+        android:id="@+id/imgnguoidung"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgnguoidung"
+        android:text="Người dùng"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"/>
+  </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="80dp"
+        android:id="@+id/r2"
+        android:layout_marginRight="80dp"
+        android:layout_alignParentEnd="true"
+        android:layout_height="wrap_content">
+      <ImageView
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+          android:src="@drawable/cateicon"
+          android:onClick="theloai"
+          android:id="@+id/imgTheLoai"
+          />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/imgTheLoai"
+          android:text="    Thể Loại"
+          android:layout_marginTop="20dp"
+          android:layout_marginLeft="10dp"/>
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="80dp"
+        android:id="@+id/r3"
+        android:layout_below="@+id/r1"
+        android:layout_height="wrap_content">
+      <ImageView
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+          android:src="@drawable/bookicon"
+          android:id="@+id/imgsach"
+          />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/imgsach"
+          android:text="Sách"
+          android:layout_marginTop="20dp"
+          android:layout_marginLeft="40dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="80dp"
+        android:layout_below="@+id/r2"
+        android:layout_alignParentEnd="true"
+        android:layout_height="wrap_content">
+      <ImageView
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+          android:src="@drawable/hdicon"
+          android:id="@+id/imgHoadon"
+          android:onClick="hoadon1"
+          />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/imgHoadon"
+          android:text="   Hóa Đơn"
+          android:layout_marginTop="20dp"
+          android:layout_marginLeft="10dp"/>
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="80dp"
+        android:id="@+id/r5"
+        android:layout_below="@+id/r3"
+        android:layout_height="wrap_content">
+      <ImageView
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+          android:src="@drawable/money_icon"
+          android:id="@+id/imgbanchay"
+          />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/imgbanchay"
+          android:text="Tăng trưởng"
+          android:layout_marginTop="20dp"
+          android:layout_marginLeft="10dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="80dp"
+        android:layout_below="@+id/r3"
+        android:layout_alignParentEnd="true"
+        android:layout_height="wrap_content">
+      <ImageView
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+          android:src="@drawable/thongke"
+          android:id="@+id/imgthongke"
+          />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/imgthongke"
+          android:text="    Doanh số"
+          android:layout_marginTop="20dp"
+          android:layout_marginLeft="10dp"/>
+    </RelativeLayout>
+
+  </RelativeLayout>
+
+<android.support.design.widget.NavigationView
+    android:id="@+id/nvmenu"
+    android:layout_width="250dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    app:headerLayout="@layout/header_layout"
+
+    app:menu="@menu/menu_navigation_view">
+
+
+</android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

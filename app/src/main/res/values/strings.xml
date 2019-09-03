@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="notify_empty_username">Không được nhập trống</string>
+    <string name="notify_empty_pass">Không được để trống</string>
+    <string name="notify_empty_lengthpass">Pass lớn hơn 6 ký tự</string>
+    <string name="thongbao">Nhập đúng mật khảu</string>
+</resources>

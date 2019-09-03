@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ducduong.myapplication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="ASSLV"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Manhinhchao_activity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Home_activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Doimatkhau_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Dangnhap_activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Sach_activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Dangky_activity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ThemSachActivity" />
+        <activity android:name=".User_activity" />
+        <activity android:name=".Them_user_activity" />
+        <activity android:name=".Update_activity" />
+        <activity android:name=".ListTheLoaiActivity" />
+        <activity android:name=".ThemTheLoai" />
+        <activity android:name=".ListHoaDonActivity" />
+        <activity android:name=".adapter_sach.HoaDonAdapter" />
+        <activity android:name=".HoaDonActivity" />
+        <activity android:name=".HoaDonChiTietActivity" />
+        <activity android:name=".ListHoaDonChiTietByIDActivity" />
+        <activity android:name=".dao.CartAdapter"></activity>
+    </application>
+
+</manifest>
